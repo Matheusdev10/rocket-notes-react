@@ -21,12 +21,10 @@ export function New() {
           </header>
           <Input placeholder="title" />
           <TextArea placeholder="observações" />
-
           <Section title="Links úteis">
             <NoteItem value="https://rocketseat.com.br" />
             <NoteItem isNew placeholder="Novo link" />
           </Section>
-
           <Section title="Marcadores">
             <div className="tags">
               <NoteItem value="react" />
