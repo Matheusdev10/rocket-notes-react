@@ -1,14 +1,11 @@
 import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-
 import { Header } from '../../Components/Header';
 import { Button } from '../../Components/Button';
 import { Section } from '../../Components/Section';
 import { Tag } from '../../Components/Tag';
 import { ButtonText } from '../../Components/ButtonText';
-
 import { api } from '../../services/api';
-
 import { Container, Links, Content } from './styles';
 
 export function Details() {
