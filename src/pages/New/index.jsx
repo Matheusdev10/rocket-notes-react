@@ -64,8 +64,8 @@ export function New() {
       tags,
       links,
     });
+
     alert('Nota criada com sucesso');
-    navigate(-1);
   }
 
   return (
@@ -123,7 +123,7 @@ export function New() {
               />
             </div>
           </Section>
-          <Button title="Salvar" onClick={handleNewNote} />
+          <Button type="button" title="Salvar" onClick={handleNewNote} />
         </Form>
       </main>
     </Container>
