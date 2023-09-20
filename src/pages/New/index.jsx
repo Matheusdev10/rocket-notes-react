@@ -57,15 +57,20 @@ export function New() {
         'Você deixou uma tag no campo adicionar, mas não clicou em adicionar. Clique para adicionar ou deixe o campo vazio'
       );
     }
-
-    await api.post('/notes', {
-      title,
-      description,
-      tags,
-      links,
-    });
-
-    alert('Nota criada com sucesso');
+    try {
+      await api.post('/notes', {
+        title,
+        description,
+        tags,
+        links,
+      });
+      debugger;
+      alert('Nota criada com sucesso');
+      navigate('/');
+      debugger;
+    } catch (error) {
+      throw new AppError('Não foi possivel cadastrar');
+    }
   }
 
   return (

@@ -40,6 +40,7 @@ function AuthProvider({ children }) {
       localStorage.setItem('@rocketnotes:user', JSON.stringify(user));
       setData({ user, token: data.token });
       alert('Perfil atualizado');
+      navigate('/');
     } catch (error) {
       if (error.response) {
         alert(error.response.data.message);
