@@ -64,10 +64,9 @@ export function New() {
         tags,
         links,
       });
-      debugger;
+
       alert('Nota criada com sucesso');
       navigate('/');
-      debugger;
     } catch (error) {
       throw new AppError('Não foi possivel cadastrar');
     }
